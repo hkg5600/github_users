@@ -9,7 +9,7 @@ class GitUserApi {
   Future<List<GitUser>> getGitUser(int index) async {
     final response = await client.get(
         "https://api.github.com/users?since=$index",
-        headers: {'Authorization': 'c3aa1d0d70dc4c914e83a4d48be018e21099f74d'});
+        headers: {'Authorization': 'your_github_token'});
 
     if (response.statusCode == 200) {
       return (json.decode(response.body) as List)
