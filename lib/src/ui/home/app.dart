@@ -41,7 +41,7 @@ class UserList extends StatelessWidget {
     gitUserBloc.getGitUser(0);
     return Scaffold(
       appBar: AppBar(
-        title: Text("GitHub Users"),
+        title: Text("GitHub Users!"),
       ),
       body: StreamBuilder(
         stream: gitUserBloc.gitUserData,
